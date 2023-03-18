@@ -7,14 +7,14 @@ function showGrade() {
       alert(`Marks cannot be more than 100 or less than 0.`);
       return;
     } else if (marks > 79) {
-      gradeDisplay.innerHTML = `A`;
+      gradeDisplay.innerHTML = `Your grade is: A`;
     } else if (marks > 60) {
-      gradeDisplay.innerHTML = `B`;
+      gradeDisplay.innerHTML = `Your grade is: B`;
     } else if (marks > 59) {
-      gradeDisplay.innerHTML = `C`;
+      gradeDisplay.innerHTML = `Your grade is: C`;
     } else if (marks > 40) {
-      gradeDisplay.innerHTML = `D`;
+      gradeDisplay.innerHTML = `Your grade is: D`;
     } else if (marks < 40) {
-      gradeDisplay.innerHTML = `E`;
+      gradeDisplay.innerHTML = `Your grade is: E`;
     }
   }
