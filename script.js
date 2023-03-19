@@ -35,13 +35,17 @@ speedBtn.addEventListener("click", (event) => {
   function getpoints(speed) {
     const kmPerPoint = 5;
     const maxPoints = 12;
-    let msg;
+    let points;
 
     if (speed < 70) {
-      msg = "Ok";
+      points = "Ok";
     }
-    msg = Math.floor((speed - 70) / kmPerPoint);
-    return msg;
+    points = Math.floor((speed - 70) / kmPerPoint);
+
+    if (points > 12) {
+      return "License suspended";
+    }
+    return points;
   }
 
   speedOutput.innerHTML = getpoints(speed);
