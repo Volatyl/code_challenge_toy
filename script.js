@@ -50,3 +50,12 @@ speedBtn.addEventListener("click", (event) => {
 
   speedOutput.innerHTML = getpoints(speed);
 });
+
+const salaryBtn = document.getElementById("salaryBtn");
+
+salaryBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+
+
+
+});
