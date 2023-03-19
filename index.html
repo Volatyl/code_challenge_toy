@@ -9,16 +9,41 @@
   </head>
   <body>
     <!-- First challenge -->
-    <div class="challenge1">
+    <div class="challenge1, container">
       <h1>STUDENT GRADE GENERATOR</h1>
-      <label for="marks">INPUT MARKS</label>
-      <input type="number" id="marks" name="marks" min="0" max="100" /> <br />
+      <form>
+        <label for="marks">INPUT MARKS</label>
+        <input type="text" id="marks" name="marks" min="0" max="100" />
+      </form>
+      <br />
       <!-- This button call the grading function -->
-      <button onclick="showGrade()">GET GRADE</button>
+      <button id="showGrade">GET GRADE</button>
       <p id="grade"></p>
     </div>
 
-    <div class="challenge2"></div>
+    <div class="challenge2, container">
+      <h1>SPEED DETECTOR</h1>
+
+      <form action="">
+        <label for="speed">INPUT SPEED </label>
+        <input type="text" name="speed" id="speed" /> <br />
+        <button id="speedBtn">POINTS</button>
+        <p id="showPoints"></p>
+      </form>
+    </div>
+
+    <div class="challenge3, container">
+      <h1>NET SALARY CALCULATOR</h1>
+
+      <form action="">
+        <label for="salary">BASIC SALARY </label>
+        <input type="text" name="salary" id="salary" /> <br />
+        <label for="benefits">BENEFITS </label>
+        <input type="text" name="benefits" id="benefits" /><br />
+        <button id="salaryBtn">CALCULATE NET SALARY</button>
+        <p id="netSalary"></p>
+      </form>
+    </div>
 
     <script src="script.js"></script>
   </body>

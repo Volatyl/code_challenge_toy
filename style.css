@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+}
+.container {
+  border: 5px solid black;
+  margin: 20px;
+  padding: 10px;
+  color: blue;
+}
