@@ -39,12 +39,14 @@ speedBtn.addEventListener("click", (event) => {
 
     if (speed < 70) {
       points = "Ok";
+    } else {
+      points = Math.floor((speed - 70) / kmPerPoint);
+      if (points > 12) {
+        return "License suspended";
+      }
+      points = "Points: " + points;
     }
-    points = Math.floor((speed - 70) / kmPerPoint);
 
-    if (points > 12) {
-      return "License suspended";
-    }
     return points;
   }
 
@@ -69,6 +71,7 @@ salaryBtn.addEventListener("click", (event) => {
       return income * 0.3;
     }
   }
+  console.log("PAYE: " + calculatePaye(income));
 
   function calculateNhif(income) {
     if (income <= 5999) {
@@ -107,11 +110,11 @@ salaryBtn.addEventListener("click", (event) => {
       return 1700;
     }
   }
+  console.log("NHIF: " + calculateNhif(income));
   const nssf = 400;
 
   const salary =
     income - (calculatePaye(income) + calculateNhif(income) + nssf);
 
   output.append(salary);
-  console.log(calculatePaye(income));
 });

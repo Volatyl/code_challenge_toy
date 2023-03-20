@@ -11,6 +11,9 @@ This program takes as input the speed of a car e.g 80. If the speed is less than
 
 For example, if the speed is 80, it will print: “Points: 2”. If the driver gets more than 12 points, the function will print: “License suspended”.
 
+## CHALLENGE 3: CALCULATE NET SALARY
+
+
 ## INSTALLATION AND RUNNING
 
 You can run this project by pulling the source cloning to your machine and opening the index.html file on any browser.
