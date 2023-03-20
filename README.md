@@ -12,11 +12,11 @@ This program takes as input the speed of a car e.g 80. If the speed is less than
 For example, if the speed is 80, it will print: “Points: 2”. If the driver gets more than 12 points, the function will print: “License suspended”.
 
 ## CHALLENGE 3: CALCULATE NET SALARY
-
+This program calculates an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculates the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary. Then it returns the Net Salary.
 
 ## INSTALLATION AND RUNNING
 
-You can run this project by pulling the source cloning to your machine and opening the index.html file on any browser.
+You can run these projects by cloning the source code to your machine and opening the index.html file on any browser.
 
 ## Contributions
 
